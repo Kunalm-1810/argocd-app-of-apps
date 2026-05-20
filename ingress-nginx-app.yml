@@ -6,9 +6,16 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/Kunalm-1810/manifest-conifg-k8s-law-ai.git
-    chart: ingress-nginx
-    targetRevision: main
+    repoURL: https://kubernetes.github.io/ingress-nginx
+    path: ingress-nginx
+    targetRevision: 4.12.0
+
+    helm:
+      values: |
+        controller:
+          service:
+            type: NodePort
+
   destination:
     server: https://172.31.8.65:33893 
     namespace: ingress-nginx
