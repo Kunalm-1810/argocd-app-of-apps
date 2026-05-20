@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/Kunalm-1810/k8s-arcgocd-config-repo.git'     # Repo containing child apps
+    repoURL: https://github.com/Kunalm-1810/k8s-arcgocd-config-repo.git    # Repo containing child apps
     targetRevision: main
-    path:/ansible-helm/Infra/k8s/frontend                                 # path of  app manifests in the repo
+    path: ansible-helm/Infra/k8s/frontend                                 # path of  app manifests in the repo
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default

@@ -6,9 +6,9 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/Kunalm-1810/k8s-arcgocd-config-repo.git'
+    repoURL: https://github.com/Kunalm-1810/k8s-arcgocd-config-repo.git
     targetRevision: main
-    path:/ansible-helm/Infra/k8s/mongo
+    path: ansible-helm/Infra/k8s/mongo
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: default
