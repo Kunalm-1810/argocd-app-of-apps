@@ -15,7 +15,7 @@ spec:
           service:
             type: NodePort
   destination:
-    server: https://172.31.8.65:33893
+    server: https://kubernetes.default.svc               # cluster URL of the k8s cluster where the app will be deployed
     namespace: ingress-nginx
   syncPolicy:
     automated:

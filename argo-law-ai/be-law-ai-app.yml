@@ -10,7 +10,7 @@ spec:
     targetRevision: main
     path: k8s-manifest-config/backend                                # path of  app manifests in the repo
   destination:
-    server: https://172.31.8.65:33893
+    server: https://kubernetes.default.svc                         # cluster URL of the k8s cluster where the app will be deployed
     namespace: default
   syncPolicy:
     automated:
